@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Path</title>
+    <link rel="stylesheet" href="/CSS/derajat.css">
+    <meta name="description" content="Materi Path Dan Konektivitas Disediakan Fitur Kalkulator"/>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="left">
+            <nav>
+                <a href="/index.html">Beranda🏠</a>
+                <a href="materi.html">Jelajahi Materi🧐</a>
+            </nav>
+        </div>
+
+        <div class="right">
+            <img src="/foto/Politeknik-Manufaktur-Negeri-Bangka-Belitung-Logo-768x768.png" alt="Logo" class="logo"> 
+            <p>Politeknik Manufaktur Negeri Bangka Belitung</p>
+        </div>
+    </header>
+
+    <!-- ISI MATERI -->
+    <div class="container">
+        <h1>Materi Konektivitas</h1>
+
+        <!-- Pengertian konektivitas -->
+        <section id="pengertian">
+            <h2>Pengertian Konektivitas</h2>
+            <p>connectivity atau konektivitas adalah jumlah minimum elemen (sisi atau titik) yang perlu dihilangkan supaya graf tersebut menjadi graf yang tidak terhubung.</p>
+        </section>
+
+        <!-- jenis-jenis konektivitas -->
+        <section id="istilah">
+            <h2>Jenis-Jenis Konektivitas</h2>
+            <ul>
+                <li><strong>konektivitas vertex (titik)</strong></li>
+                <li><strong>konektivitas edge (sisi)</strong></li>  
+            </ul>
+        </section>
+
+        <section id="CutSet">
+            <h2>CutSet</h2>
+            <p>cut-set dari graf terhubung G adalah himpunan sisi yang bila dibuang dari G menyebabkan G tidak terhubung. jadi cut-set selalu menghasilkan dua buah komponen.</p>
+        </section>
+
+        <section id="graf terarah">
+            <h2>Konektivitas terhubung pada graf berarah</h2>
+            <p>graf dikatakan terhubung kuat (strongly connected) jika terdapat lintasan berarah dari u ke v, dan sebaliknya dari v ke u. graf dikatakan terhubung lemah (weakly connected) jika u dan v tidak terhubung kuat, tetapi tetap terhubung pada graf tak-berarahnya</p>
+        </section>
+
+        <!-- contoh konektivitas -->
+        <section id="konektivitas">
+
+            <div class="graf-container">
+                <img src="/foto/konektivitas berarah.png" alt="konektivitas berarah">
+                <div class="graf-text">
+                    <p>Perhatikan Graf Berikut Ini:</p>
+                    <p>Graf L memimiliki 6 simpul. Simpul v2 dan v3 terhubung kuat karena ada lintasan berarah (v2,v3) dan (v3,v4,v1,v2) yang menghubungkan dua simpul tersebut. Simpul v1 dan v5 terhubung lemah karena tidak terdapat lintasan berarah yang  berawal dari v5 dan berakhir di v1.
+                   </p>
+                </div>
+            </div>
+
+             <section id="graf terarah">
+            <h2>Konektivitas terhubung pada graf tak berarah</h2>
+        </section>
+
+            <div class="graf-container">
+                <img src="/foto/konektivitas tak berarah.png" alt="konektivitas tak bearah">
+                <div class="graf-text">
+                    <p>graf H dikatakan terhubung (connected) jika terdapat lintasan di antara
+                        setiap pasang simpul berbeda dari graf tersebut.</p>
+                    <p>graf H dikatakan takterhubung (disconnected) jika tidak terdapat lintasan 
+                        di antara setiap pasang simpul dari graf tersebut.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-title">© 2025 | Website Teori Graf Path dan Konektivitas</div>
+    </footer>
+
+</body>
+</html>

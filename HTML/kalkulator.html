@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Derajat & Graf</title>
+  <link rel="stylesheet" href="/CSS/kalkulator.css" />
+  <meta name="description" content="Materi Path Dan Konektivitas Disediakan Fitur Kalkulator"/>
+
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/vis-network/styles/vis-network.min.css" />
+</head>
+<body>
+
+<header class="navbar">
+    <div class="left">
+        <nav>
+            <a href="/index.html">Beranda🏠</a>
+            <a href="/HTML/materi.html">Materi🧐</a>
+            <a href="#kalk1">Derajat🌡️</a>
+            <a href="#kalk2">Path & Konektivitas🛣️</a>
+        </nav>
+    </div>
+
+     <div class="right">
+            <img src="/foto/Politeknik-Manufaktur-Negeri-Bangka-Belitung-Logo-768x768.png" alt="Logo" class="logo"> 
+            <p>Politeknik Manufaktur Negeri Bangka Belitung</p>
+        </div>
+</header>
+
+<!-- KALKULATOR 1 -->
+<div class="container" id="kalk1">
+    <h2>Kalkulator Derajat & Lemma Jabat Tangan</h2>
+    <p>Masukkan sisi graf seperti contoh dibawah:</p>
+    <p>a - b</p>
+    <p>b - c</p>
+
+    <textarea id="deg-edges-input" placeholder="A-B,B-C,C-D"></textarea>
+    <button id="deg-process-btn">Proses Graf</button>
+
+    <h3>Hasil:</h3>
+    <pre id="deg-result"></pre>
+
+    <canvas id="deg-canvas" width="600" height="350"></canvas>
+</div>
+
+<!-- KALKULATOR 2 -->
+<div class="container" id="kalk2">
+    <h2>Kalkulator Path dan Konektivitas</h2>
+
+    <p>Masukkan edge (contoh: <b>A-B,B-C,C-D</b>)</p>
+    <input type="text" id="vis-input" placeholder="A-B,B-C,C-D">
+
+    <button id="vis-draw-btn">Gambar Graf</button>
+
+    <div class="opsi">
+        <button id="vis-path-btn">Cari Path (A → D)</button>
+        <button id="vis-con-btn">Cek Konektivitas</button>
+    </div>
+
+    <p id="vis-result"></p>
+
+    <div id="vis-container"></div>
+</div>
+
+<footer class="footer">
+    <div class="footer-title">© 2025 | Website Teori Graf Path dan Konektivitas</div>
+</footer>
+
+<script src="/JS/kalkulator.js"></script>
+
+</body>
+</html>

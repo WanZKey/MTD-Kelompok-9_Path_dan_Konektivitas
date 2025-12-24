@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Path</title>
+    <link rel="stylesheet" href="/CSS/path.css">
+    <meta name="description" content="Materi Path Dan Konektivitas Disediakan Fitur Kalkulator"/>
+    
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="left">
+            <nav>
+                <a href="/index.html">Beranda🏠</a>
+                <a href="materi.html">Jelajahi Materi🧐</a>
+            </nav>
+        </div>
+
+        <div class="right">
+            <img src="/foto/Politeknik-Manufaktur-Negeri-Bangka-Belitung-Logo-768x768.png" alt="Logo" class="logo"> 
+            <p>Politeknik Manufaktur Negeri Bangka Belitung</p>
+        </div>
+    </header>
+
+    <!-- ISI MATERI -->
+    <div class="container">
+        <h1>Materi Path</h1>
+
+        <!-- Pengertian path -->
+        <section id="pengertian">
+            <h2>Pengertian Path</h2>
+            <p>Dalam teori graf, path atau lintasan adalah urutan titik yang saling terhubung melalui garis sehingga bisa membentuk lintasan dari satu titik ke titik lain. Panjang path dilihat dari berapa banyak garis yang dilewati.</p>
+        </section>
+
+        <!-- jenis-jenis path -->
+        <section id="istilah">
+            <h2>Jenis-Jenis Path</h2>
+            <ul>
+                <li><strong>Path Sederhana:</strong> lintasan yang semua simpulnya berbeda dan setiap sisi yang dilalui hanya satu kali</li>
+                <li><strong>Path Tertutup:</strong>lintasan yang berawal dan berakhir pada simpul yang sama</li>
+                <li><strong>Path Terbuka:</strong>lintasan yang tidak berawal dan berakhir pada simpul yang sama</li>
+            </ul>
+        </section>
+
+        <!-- ilustrasi Macam-macam path -->
+        <section id="derajat">
+
+            <div class="graf-container">
+                <img src="/foto/belah ketupat.png" alt="Contoh lintasan">
+                <div class="graf-text">
+                    <p>Perhatikan Graf Berikut Ini:</p>
+                    <p>lintasan 1, 2, 4, 3 ( path sederhana dan path terbuka )<br>
+                       lintasan 1, 2, 4, 3, 1 ( path tertutup )<br>
+                       lintasan 1, 2, 4, 3, 2 ( path terbuka )
+                   </p>
+                </div>
+            </div>
+
+            <div class="graf-container">
+                <img src="/foto/belah ketupat.png" alt="Contoh Graf tak Berarah">
+                <div class="graf-text">
+                    <p><b>Path Pada Graf Tak Berarah</b></p>
+                    <p>Tentukan Pada Graf Tak Berarah <br>
+                    Tentukan Banyak Lintasan (Path) yang dapat dilalui dari V1 ke V3</p>
+                    <p>P1 = {1, (1,3), 3}, panjang lintasan: 1<br>
+                       P2 = { 1, (1,2), 2, (2,3), 3} panjang lintasan: 2<br>
+                       P3 = {1, (1,2), 2, (2,4),4,(4,3),(3)} panjang lintasan 3<br>
+                       jadi banyak lintasan(path) yang dapat dilalui dari v1 ke v3
+                       adalah 3 lintasan(path)</p>
+                </div>
+            </div>
+
+            <div class="graf-container">
+                <img src="/foto/path berarah.png" alt="Contoh Graf Berarah">
+                <div class="graf-text">
+                    <p><b>Path Pada Graf Berarah</b></p>
+                    <p>Tentukan path berarah terpendek dari titik v5 ke titik v2 <br>
+                     dan dari titik v1 ke v6 pada graf berarah</p>
+                    <p>path berarah terpendek dari v5 ke v2<br>
+                       P = { v5, (v5,v1), v1,(v1,v2),v,}panjang lintasan 2<br>
+                       path berarah terpendek dari v1 ke v6:<br>
+                       P= {v1,{v1,v2},v2,(v2,v6),v6} panjang lintasan 2</p>
+                </div>
+            </div>
+
+            <div class="graf-container">
+                <img src="/foto/Lintasan Euler.png" alt="lintasan euler">
+                <div class="graf-text">
+                    <p><b>Lintasan Euler</b></p>
+                    <p>lintasan Euler (Euleria path) merupakan lintasan yang melalaui semua sisi dari suatu graf tepat satu kali.<br>
+                       Definisi diatas mengizinkan lintasan yang dibuat melalui sejumlah simpul lebih dari sekali.</p>
+                      <p>-Graf K1 tidak memuat lintasan euler.<br>
+                         -Berbeda darinya, graf K2 dan K3 keduanya membuat lintasan euler.<br>
+                         -simpul merah dan biru pada masing” graf berturut-turut mempersentasikan simpul awal dan akhirnya,<br>
+                        -sedangkan setiap sisi untuk i menyatakan urutan sisi yang akan di lintasi oleh lintasan euler.</p> 
+                </div>
+            </div>
+
+            <div class="graf-container">
+                <img src="/foto/sirkuit euler.png" alt="sirkuit euler">
+                <img src="/foto/sirkuit eulerr.png" alt="sirkuit euler1">
+                <div class="graf-text">
+                    <p><b>Sirkuit Euler</b></p>
+                    <p>Jika lintasan euler kembali ke simpul asal sehingga membuat lintasan tertutup(sirkuit), maka disebut dengan sirkuit culer<br>
+                       sirkuit euler adalah sirkuit yang melalui sisi di dalam graf tepat satu  kali.
+                    <p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-title">© 2025 | Website Teori Graf Path dan Konektivitas</div>
+    </footer>
+
+</body>
+</html>

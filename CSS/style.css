@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fff;
+    padding-top: 80px;
+}
+
+/* -- NAVBAR -- */
+.navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav a {
+    color: #222; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #c00000;
+}
+
+.logo {
+    height: 50px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/foto/test.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2c2a55;
+
+    text-shadow:
+        0 0 5px rgba(44,42,85,0.6),
+        0 0 10px rgba(44,42,85,0.4),
+        0 0 20px rgba(44,42,85,0.25);
+}
+
+/* -- BUTTON -- */
+.btn-primary {
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #2f3b52;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-primary:hover {
+    background: #c00000;
+}
+
+/* -- TENTANG KAMI -- */
+.section-about {
+    padding: 120px 50px;
+    background: #2f3b52;
+    text-align: center;
+}
+
+.section-about h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: white;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    width: 200px;
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.team-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.team-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* -- TEORI GRAF -- */
+.section-teori {
+    padding: 120px 50px;
+    background:#eef3ff;
+}
+
+.section-teori h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.section-teori p {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222;
+}
+
+
+.teori-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.teori-left {
+    flex: 2;
+}
+
+
+.teori-right {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.teori-right h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+/* -- FOOTER -- */
+.footer {
+    background: #2f3b52;
+    color: #eee;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* -- RESPONSIVE -- */
+@media (max-width: 768px) {
+    .hero-content {
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .teori-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+}

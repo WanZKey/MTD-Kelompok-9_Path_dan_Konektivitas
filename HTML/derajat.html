@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Derajat Graf</title>
+    <link rel="stylesheet" href="/CSS/derajat.css">
+    <meta name="description" content="Materi Path Dan Konektivitas Disediakan Fitur Kalkulator"/>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="left">
+            <nav>
+                <a href="/index.html">Beranda🏠</a>
+                <a href="materi.html">Jelajahi Materi🧐</a>
+            </nav>
+        </div>
+
+        <div class="right">
+            <img src="/foto/Politeknik-Manufaktur-Negeri-Bangka-Belitung-Logo-768x768.png" alt="Logo" class="logo"> 
+            <p>Politeknik Manufaktur Negeri Bangka Belitung</p>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <h1>Materi Derajat Graf</h1>
+
+        <!-- Pengertian Derajat -->
+        <section id="pengertian">
+            <h2>Pengertian Derajat</h2>
+            <p>Nah sebelum masuk ke materinya kita harus terlebih dahulu mengenal derajat dan lemma jabat tangan. <b>Derajat</b> dalam graf adalah jumlah sisi (garis) yang terhubung ke suatu simpul (titik). Artinya, derajat menunjukkan berapa banyak hubungan yang dimiliki satu simpul dengan simpul lainnya di dalam suatu graf. Nah sedangkan <b>Lemma Jabat Tangan</b> menyatakan bahwa jumlah derajat semua simpul dalam sebuah graf selalu sama dengan dua kali jumlah sisi. Artinya, setiap sisi menyumbang tepat dua derajat (satu ke tiap simpul ujungnya), sehingga total derajat pasti genap.</p>
+        </section>
+
+        <!-- Istilah-istilah dalam graf -->
+        <section id="istilah">
+            <h2>Istilah-istilah dalam Graf</h2>
+            <ul>
+                <li><strong>Simpul terpencil:</strong> Simpul yang tidak memiliki sisi bersisian atau simpul yang berderajat 0.</li>
+                <li><strong>Simpul anting-anting:</strong> Simpul graf yang berderajat 1.</li>
+                <li><strong>Sisi gelang (loop):</strong> Sisi yang titik ujungnya sama (biasanya berbentuk bulat).</li>
+                <li><strong>Sisi ganda:</strong> Dua sisi atau lebih yang menghubungkan sepasang titik.</li>
+            </ul>
+            
+            <!-- contoh" dalam graf-->
+            <div class="graf-container">
+                <img src="/foto/graf simpul terpencil.png" alt="Contoh Graf G4">
+                <div class="graf-text">
+                    <p>Perhatikan graf G4 : </p>
+                    <p>
+                        Nah graf di samping ini adalah graf <b>Simpul Terpencil</b>
+                        Simpul terpencil (lsolated Vertex) ialah simpul yang tidak mempunyai sisi yang 
+                        bersisian dengannya. Jadi simpul 5 adalah simpul terpencil
+                    </p>
+                </div>
+            </div>
+
+            <div class="graf-container">
+                <img src="/foto/graf anting-anting.png" alt="Contoh Graf anting-anting">
+                <div class="graf-text">
+                    <p>Perhatikan graf anting-anting : </p>
+                    <p>
+                        <b>Simpul anting-anting</b> adalah simpul (titik atau vertex)
+                        pada suatu graf tak berarah yang berderajat satu (1).
+                        Derajat suatu simpul, dinotasikan sebagai d(v), 
+                        adalah jumlah sisi (garis atau edge) yang bersisian
+                        langsung dengan simpul tersebut.
+                    </p>
+                </div>
+            </div>
+
+            <div class="graf-container">
+                <img src="/foto/graf loop.png" alt="Contoh Graf loop">
+                <div class="graf-text">
+                    <p>Perhatikan graf loop ini : </p>
+                    <p>
+                        <b>Graf sisi Gelang (loop)</b> merupakan gambar lingkaran atau loop di dalam grafnya.
+                        seperti gambar Graf di samping ini sisi P dan Q adalah sisi Gelang (loop)
+                    </p>
+                </div>
+            </div>
+
+            <div class="graf-container">
+                <img src="/foto/graf ganda.png" alt="Contoh Graf Ganda">
+                <div class="graf-text">
+                    <p>Perhatikan graf ganda ini : </p>
+                    <p>
+                        <b>Graf sisi Ganda (Multigraph)</b> Terdapat dua sisi atau lebih yang 
+                        menghubungkan pasangan simpul yang sama. seperti gambar di samping ini
+                        S - R dan S - P adalah sisi ganda.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Derajat (Degree) -->
+        <section id="derajat">
+            <h2>Derajat (Degree)</h2>
+            <p>Derajat suatu simpul adalah jumlah sisi yang bersisian dengan simpul tersebut. Notasi: <strong>d(v)</strong></p>
+            <p>Perhatikan contoh Graf Tak Terarah diBawah ini :</p>
+
+            <div class="graf-container">
+                <img src="/foto/belah ketupat.png" alt="Contoh Graf G1">
+                <div class="graf-text">
+                    <p>Perhatikan graf G1:</p>
+                    <ul>
+                        <li>d(1) = 2 d(4) = 2 (bersisian dengan sisi ganda)</li>
+                        <li>d(2) = 3 d(3) = 3 (bersisian dengan sisi ganda)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>Perhatikan contoh Graf Terarah diBawah ini :</p>
+            <div class="graf-container">
+                <img src="/foto/graf berarah.png" alt="Contoh Graf Berarah">
+                <div class="graf-text">
+                    <p>
+                        pada graf berarah, dejarat simpul dibedakan lagi menjadi
+                       derajat masuk(in-degree) dan derajat keluar(out-degree)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Derajat (Degree) -->
+            <h2>Lemma Jabat Tangan</h2>
+            <div class="graf-container">
+                <img src="/foto/belah ketupat.png" alt="Lemma Jabat Tangan">
+                <div class="graf-text">
+                    <p><b>Lemma Jabat Tangan</b> adalah jumlah derajat semua simpul pada suatu graf adalah genap,
+                       yaitu dua kali jumlah sisi pada graf tersebut
+                    </p>
+                       <img src="/foto/notasi.png" alt="Lemma Jabat Tangan">
+                       <p>d(1) + d(2) + d(3) + d(4)<br>
+                          2 + 3 + 3 + 2 = 10<br>
+                          2 x jumlah sisi = 2 x 5 = 10
+                        </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-title">© 2025 | Website Teori Graf Path dan Konektivitas</div>
+    </footer>
+
+</body>
+</html>
